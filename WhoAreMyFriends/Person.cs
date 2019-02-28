@@ -87,6 +87,18 @@ namespace WhoAreMyFriends {
             }
         }
 
+        public string FullName {
+            get { return String.Format("{0} {1}", FirstName, LastName);  }
+        }
+
+        private Vehicle _Transportation;
+
+        public Vehicle Transportation {
+            get { return _Transportation; }
+            set { _Transportation = value; }
+        }
+
+
         public Personalities Personality {
             get {
                 return _Personality;
